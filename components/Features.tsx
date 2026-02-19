@@ -17,7 +17,7 @@ const features = [
   },
   {
     title: 'AI-Powered Summaries',
-    description: 'Public channels get smart AI summaries. Control what's scrapable. Make your community discoverable on your terms.',
+    description: `Public channels get smart AI summaries. Control what's scrapable. Make your community discoverable on your terms.`,
     icon: '✨',
     gradient: 'from-accent-400 to-accent-600',
   },
