@@ -11,6 +11,9 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-6 text-sm">
+            <a href="/compare" className="hover:text-white transition-colors">
+              Compare
+            </a>
             <a href="#" className="hover:text-white transition-colors">
               X (Twitter)
             </a>
