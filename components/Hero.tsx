@@ -70,7 +70,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            [Your tagline goes here]
+            Your community. Your rules.
           </motion.p>
 
           <motion.p 
