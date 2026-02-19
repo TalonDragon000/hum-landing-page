@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { comparisonData, CompetitorName } from '@/lib/comparisonData';
+import { comparisonData, CompetitorName, CategoryName } from '@/lib/comparisonData';
 
 export default function ComparePage() {
   const [selectedCompetitor, setSelectedCompetitor] = useState<CompetitorName>('Discord');
@@ -95,7 +95,7 @@ export default function ComparePage() {
               className="space-y-8"
             >
               {comparisonData.categories.map((category) => {
-                const features = comparisonData.features[category];
+                const features = comparisonData.features[category as CategoryName];
                 if (!features || features.length === 0) return null;
 
                 return (

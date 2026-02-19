@@ -1,12 +1,12 @@
 export const comparisonData = {
-  competitors: ['Hum', 'Discord', 'Status', 'Matrix', 'Signal', 'Telegram', 'Revolt'],
+  competitors: ['Hum', 'Discord', 'Status', 'Matrix', 'Signal', 'Telegram', 'Revolt'] as const,
   categories: [
     '🔐 Privacy & Security',
     '🌐 Decentralization',
     '⚡ Web3 Features',
     '👥 Community Features',
     '💰 Cost & Accessibility'
-  ],
+  ] as const,
   features: {
     '🔐 Privacy & Security': [
       {
@@ -221,3 +221,19 @@ export const comparisonData = {
 
 export type CompetitorName = typeof comparisonData.competitors[number];
 export type CategoryName = typeof comparisonData.categories[number];
+
+type FeatureComparison = {
+  feature: string;
+  description: string;
+  Hum: string;
+  Discord: string;
+  Status: string;
+  Matrix: string;
+  Signal: string;
+  Telegram: string;
+  Revolt: string;
+};
+
+export type FeaturesData = {
+  [K in CategoryName]: FeatureComparison[];
+};
